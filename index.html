@@ -699,7 +699,7 @@ var CV_B64 = "JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PC9UaXRsZSA8RkVGRjAwNTMwMDY4MDA2MT
       renderer.render(scene, camera);
       if(running && !reduce) requestAnimationFrame(frame);
     }
-    host.querySelector('.orbit-hint').textContent = finePointer ? 'Move your cursor to turn the rings' : '';
+    host.querySelector('.orbit-hint').textContent = finePointer ? '' : '';
     host.classList.add('is-3d');
     if(reduce){
       frame(start + 4000);
